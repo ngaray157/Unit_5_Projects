@@ -35,36 +35,101 @@ header, ul, nav, li, a{
 /* Row Styles */
 
 .row::after{
-   clear:both;
-   content:"";
+   clear: both;
+   content: "";
    display: table;
 }
 
 /* Page Header Styles */
 
+body header img{
+   display: block;
+   width: 70%;
+   float: left;
+}
 
+/* Vertical Navigation List Styles */
+
+body header>nav{
+   float:left;
+   padding-left: 2%;
+   padding-right: 2%;
+   width: 30%;
+}
+header nav a{
+   display: block;
+   width: 100%;
+}
 
 /* Horizontal Navigation List Styles */
 
-
-
+nav.horizontal li{
+   display:block;
+   width: 12.5%;
+   float: left;
+}
 
 /* Topics Styles */
 
+ul#topics li{
+   display: block;
+   width: 20%;
+   float: left;
+   margin-left: 0%;
+   margin-right: 1.5%;
+}
 
+#topics li:first-of-type{
+   margin-left: 7.75%;
+}
+#topics li:last-of-type{
+   margin-right: 7.75%;
+}
 
-
-
+li img{
+   display: block;
+   width: 50%;
+   align-content: center;
+}
 
 /* HR Styles */
 
-
+hr{
+   width: 50%;
+}
 
 
 /* Customer Comment Styles */
 
+ul#comments{
+   width: 75%;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: auto;
+   margin-right: auto;
+}
 
+#comments li{
+   display: block;
+   width: 50%;
+   float:left;
+   margin-bottom: 30px;
+}
 
+#comments img{
+   display:block;
+   width: 20%;
+   float: left;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+#comments li p{
+   float: left;
+   width: 70%;
+}
 /* Footer Styles */
 
-
+footer{
+   clear: both;
+}
