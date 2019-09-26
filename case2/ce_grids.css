@@ -20,6 +20,12 @@ div.row{
    clear: both;
 }
 
+div.row::after{
+   clear:both;
+   content:"";
+   display:table;
+}
+
 /* Grid Columns Styles */
 
 div[class^="column"]{
@@ -38,3 +44,6 @@ div.column80{width: 80%}
 
 /* Grid Spacing Styles */
 
+div.container, div.row, div[class^="column"], div[class^="cell"], div.cell a{
+   box-sizing: border-box;
+}
