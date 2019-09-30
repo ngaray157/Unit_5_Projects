@@ -13,7 +13,10 @@
    Supporting Files: 
 
 */
-
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
 
 address, article, aside, blockquote, body, cite, 
 div, dl, dt, dd, em, figcaption, figure, footer, 
@@ -24,7 +27,47 @@ li, main, nav, ol, p, section, span, ul {
    border: 0;
    font-size: 100%;
    vertical-align: baseline;
-   background: transparent;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
+   background: transparent; 
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+body {
+   line-height: 1;
+}
+
+/* css */
+
+body{
+   height: 100%;
+}
+body{
+   width: 95%;
+   max-width: 960px;
+   min-width: 640px;
+   margin-left: auto;
+   margin-right: auto;
+   min-height: 100%;
+}
+header, ul, nav, li, a{
    box-sizing: border-box;
+}
+
+
+.row::after{
+   clear: both;
+   content: "";
+   display: table;
+}
+
+body header img{
+   display: block;
+   width: 70%;
+}
